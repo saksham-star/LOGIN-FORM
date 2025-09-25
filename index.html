@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/primeicons/primeicons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <video autoplay muted loop playsinline preload="auto" id="bg-video">
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="content">
+        <form action="#" autocomplete="off">
+            <h2>Login</h2>
+            <div class="input-box">
+                <label for="username" class="visually-hidden">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <i class="pi pi-user"></i>
+            </div>
+            <div class="input-box">
+                <label for="password" class="visually-hidden">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" required autocomplete="new-password">
+                <i class="pi pi-eye-slash toggle-password" id="togglePassword"></i>
+            </div>
+            <div class="remember">
+                <label for="rememberMe"><input type="checkbox" id="rememberMe" name="rememberMe"> Remember me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btnn">Login</button>
+            <div class="button">
+                <a href="#"><i class="pi pi-google"></i> Google</a>
+                <a href="#"><i class="pi pi-facebook"></i> Facebook</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
